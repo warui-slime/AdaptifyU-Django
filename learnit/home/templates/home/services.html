@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+      font-family: 'Sono', sans-serif;
+    }
+    </style>
+    
+</head>
+<body class="bg-custom-background">
+
+    <!-- Navbar starts here. -->
+
+    <nav class="w-full h-14 mt-2 flex justify-between items-center px-6 sm:px-8" id = "nav">
+        <div class="pt-16">
+            <img class="h-24 w-48" src="{% static 'home/logo.png' %}" alt="logo"> 
+        </div>
+        <div class="sm:flex text-gray-200">
+            <ul id = "menu" class="sm:flex hidden ">
+                <li class="mx-[10px]"><span class="text-blue-500 px-1">01</span><a href="{% url 'homepage' %}">Home</a></li>
+                <li class="mx-[10px]"><span class="text-blue-500 px-1">02</span><a href="{% url 'homepage' %}">Features</a></li>
+                <li class="mx-[10px]" ><span class="text-blue-500 px-1">03</span><a href="#nav">Services</a></li>
+                <li class="mx-[10px]"><span class="text-blue-500 px-1">04</span><a href="{% url 'homepage' %}">Contact Us</a></li>
+            </ul>
+            <div class="flex justify-between items-center">
+                
+                <div class="sm:hidden flex px-2 text-4xl" id="menu-icon" >&#8801;</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar ends here. -->
+
+    <!-- Services starts here. -->
+    <div class="text-2xl px-4 mt-14 font-semibold text-blue-500">
+        Our Services
+    </div>
+    <div>
+        <div class="flex justify-center">
+        
+
+            <div class="max-w-sm m-4 mx-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-serif">Machine Learning for Personalization:</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Machine learning algorithms can analyze student data to create personalized learning experiences, including:
+                           Adaptive Learning Platforms: Adjusting the difficulty and pace of content based on individual student progress.
+                        Recommendation Systems: Suggesting relevant courses, resources, or activities based on a student's learning history.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="max-w-sm m-4 mx-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold font-serif tracking-tight text-gray-900 dark:text-white">Intelligent Tutoring Systems (ITS):</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">These systems use AI to provide personalized guidance and feedback to students. ITS can:
+                        Identify Learning Gaps: Analyze student performance to identify areas that need improvement.
+                        Real-time Feedback: Offer immediate feedback on assignments and quizzes.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="max-w-sm m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold font-serif tracking-tight text-gray-900 dark:text-white">Gamification Models:</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">AI is often integrated into gamified elements for increased engagement and motivation:
+                        Adaptive Games: Adjusting difficulty levels based on the player's skill and knowledge.
+                        Reward Systems: Using AI to determine and allocate rewards based on achievements.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            
+    
+        </div>
+        <div class="flex justify-center">
+        
+
+            <div class="max-w-sm m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold font-serif tracking-tight text-gray-900 dark:text-white">Collaborative Filtering:</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Collaborative filtering algorithms analyze user behavior to make recommendations:
+                        Peer-to-Peer Learning: Suggesting study groups or collaborative projects based on similar learning profiles.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="max-w-sm m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold font-serif tracking-tight text-gray-900 dark:text-white">Predictive Analytics:</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Predictive analytics models use historical data to forecast future trends and outcomes. In edtech, this can involve:
+                        Identifying At-Risk Students: Predicting which students may struggle and providing early interventions.
+                        Resource Allocation: Optimizing resource allocation based on predicted demand and usage patterns.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="max-w-sm m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold font-serif tracking-tight text-gray-900 dark:text-white">Privacy-Preserving AI:</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Implementing privacy-preserving techniques to ensure the security of student data while still benefiting from AI-driven insights.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            
+    
+        </div>
+    </div>
+    
+    
+    <!-- Services ends here. -->
+
+    <!-- Footer starts here. -->
+    
+
+    <footer class="mt-8 rounded-lg shadow">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="{% static 'home/logo.png' %}" class="h-24 w-48" alt="Logo" />
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"> <a href="#" class="hover:underline">AdaptifyU</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+
+    <!-- Footer ends here. -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>
